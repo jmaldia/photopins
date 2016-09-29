@@ -1,6 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+<!-- This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+ -->
+
+ # One Month Rails
+
+
+ This is the photopins sample app for [*One Month Rails*](http://onemontrails.com)
+
+ by [Jon Maldia](http://www.boonsoh.com)
