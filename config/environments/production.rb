@@ -86,5 +86,5 @@ Rails.application.configure do
 
   # Required for Heroku - devise
   # Note to set this to your actual host
-  config.action_mailer.default_url_options = { host: 'localhost', 'photopins.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'photopins.herokuapp.com' }
 end
