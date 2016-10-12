@@ -1,5 +1,7 @@
 $body-bg:                     #F5F5F5;
 
+$border-radius: 0px;
+
 $navbar-inverse-bg:           #34495e;
 $navbar-inverse-link-color:   #ecf0f1;
 
@@ -26,4 +28,7 @@ $jumbotron-color:             #34495e;
   font-weight: bold;
 }
 
-
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}

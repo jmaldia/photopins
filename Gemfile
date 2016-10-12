@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby '2.3.1'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -28,6 +28,9 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Use for user sign ups
+gem 'devise', '~> 4.2.0'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
