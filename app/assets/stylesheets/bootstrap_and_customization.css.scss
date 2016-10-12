@@ -1,7 +1,9 @@
-$body-bg:                     #1abc9c;
+$body-bg:                     #F5F5F5;
 
 $navbar-inverse-bg:           #34495e;
 $navbar-inverse-link-color:   #ecf0f1;
+
+$navbar-height:               45px;
 /*
 $navbar-default-bg:           #2c3e50;
 $navbar-default-color:        #ecf0f1;
@@ -10,8 +12,18 @@ $navbar-default-link-color:  #ecf0f1;
 
 $brand-primary:               #c0392b;
 
-$jumbotron-bg:                #ecf0f1;
-
+$jumbotron-bg:                #FFFFFF;
+$jumbotron-color:             #34495e;
 
 
 @import 'bootstrap';
+
+.center {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+
