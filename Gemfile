@@ -62,3 +62,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass'
 # Gem for images
 gem 'paperclip', '~> 5.1.0'
+# AWS SDK
+gem 'aws-sdk', '~> 2.0'

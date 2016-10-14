@@ -91,4 +91,15 @@ Rails.application.configure do
   # Required for Heroku - devise
   # Note to set this to your actual host
   config.action_mailer.default_url_options = { :host => 'photopins.herokuapp.com' }
+
+  # Allow to upload images to S3 
+  # ENV allows you to set ENV variables so that you don't have to save it in the code
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['S3_BUCKET_NAME'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
 end
