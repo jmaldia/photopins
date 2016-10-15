@@ -64,3 +64,7 @@ gem 'bootstrap-sass'
 gem 'paperclip', '~> 5.1.0'
 # AWS SDK
 gem 'aws-sdk', '~> 2.0'
+# Masonry GEM, to style our app
+gem 'masonry-rails', '~> 0.2.0'
+# jQuery Turbo links
+gem 'jquery-turbolinks'
