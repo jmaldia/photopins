@@ -1,4 +1,4 @@
-<%= link_to 'Back', pins_path, class: "btn btn-primary" %>
+</span><%= link_to 'Back', pins_path,  class: "btn btn-default" %>
 
 <div class="row">
   <div class="col-md-offset-2 col-md-8">
@@ -8,7 +8,7 @@
       </div>
       <div class="panel-body">
         <p style="font-family: helvetica; font-size: 22px;"><%= @pin.description %></p>
-        <p style="color: #999999;"><strong><%= @pin.user.email if @pin.user %></strong></p>
+        <p style="color: #999999;"><strong><%= @pin.user.name if @pin.user %></strong></p>
 
         <% if @pin.user == current_user %>
           <%= link_to edit_pin_path(@pin) do %>
