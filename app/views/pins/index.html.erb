@@ -1,6 +1,6 @@
 
 <div class="jumbotron center">
-  <h1>Max & Charlie's PhotoPins!</h1>
+  <h1>Max and Charlie's PhotoPins!</h1>
 </div>
 
 <%= render 'pages/home' unless user_signed_in? %>
@@ -9,34 +9,30 @@
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
       <%= link_to image_tag(pin.image.url(:medium)), pin %>
-      <div class="panel-body">
-        <span style="font-family: helvetica; font-size: 22px;">
-          <%= pin.description %>  
-        </span>
-        <br />
-        <span style="color: #999999;">
-          <%= pin.user.email if pin.user %>
-        </span>
-        <br />
-        <% if pin.user == current_user %>
-          <%= link_to edit_pin_path(pin) do %>
-            <span class="glyphicon glyphicon-edit"></span>
-            Edit
-          <% end %>
-          <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <span class="glyphicon glyphicon-trash"></span>
-            Delete
-          <% end %>
-        <% end %>
-      </div>
-    </div>
-  <% end %>
-</div>
+        <div class="panel-body">
+          <span style="font-family: helvetica; font-size: 22px;">
+            <%= pin.description %>  
+          </span>
 
-<div style="margin:auto; text-align: center;">
-  <br />
-  <br />
-  <% if user_signed_in? %>
-    <%= link_to 'New Pin', new_pin_path, class: "btn btn-primary" %>
+          <br />
+
+          <span style="color: #999999;">
+            <%= pin.user.email if pin.user %>
+          </span>
+
+          <br />
+
+          <% if pin.user == current_user %>
+            <%= link_to edit_pin_path(pin) do %>
+              <span class="glyphicon glyphicon-edit"></span>
+              Edit
+            <% end %>
+            <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <span class="glyphicon glyphicon-trash"></span>
+              Delete
+          <% end %>
+        </div>
+      <% end %>
+    </div>
   <% end %>
 </div>
